@@ -1,0 +1,15 @@
+[package]
+name = "lab1"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.31"
+egui = "0.31"
+wmi = "0.15"
+serde = { version = "1.0", features = ["derive"] }
+windows = { version = "0.54", features = ["Win32_System_Com"] }
+com = "0.2.0"
+
+[package.metadata.windows]
+requested_execution_level = "requireAdministrator"
